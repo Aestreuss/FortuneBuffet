@@ -105,7 +105,7 @@ public class Movement : MonoBehaviour
 
     private void Jump()
     {
-        //resets y velocity 
+        //resets y (up) velocity 
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse); //impulse because you are only applying this jump once
