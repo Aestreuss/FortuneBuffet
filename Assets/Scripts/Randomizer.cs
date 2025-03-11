@@ -32,6 +32,8 @@ public class Randomizer : MonoBehaviour
             Cursor.visible = true;
             rollForFood.onClick.AddListener(RandomizeImage);
         }
+        
+
     }
 
     void RandomizeImage()
