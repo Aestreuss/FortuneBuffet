@@ -1798,6 +1798,7 @@ MonoBehaviour:
   rareLobster: {fileID: 21300000, guid: 24d5426fe49a56e49a9a19613923873f, type: 3}
   imageToChange: {fileID: 1857475972}
   certificate: {fileID: 239156729}
+  rollButton: {fileID: 381976551}
   rollForFood: {fileID: 381976552}
   delayTime: 1
   rareLobsterChance: 20
@@ -1846,7 +1847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fe1bbc3cd1eead479d1501df69986c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraPostition: {fileID: 1832118759}
+  cameraPosition: {fileID: 1832118759}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

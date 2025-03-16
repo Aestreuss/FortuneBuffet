@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Rendering.UI;
+using Unity.VisualScripting;
+using System.Security.Cryptography.X509Certificates;
 
 public class Randomizer : MonoBehaviour
 {
@@ -14,6 +16,7 @@ public class Randomizer : MonoBehaviour
     public Image imageToChange;
 
     public GameObject certificate;
+    public GameObject rollButton;
 
     Buffet playerIsClose;
 
@@ -24,17 +27,12 @@ public class Randomizer : MonoBehaviour
 
     public int rareLobsterChance;
 
-    public void Update()
-    {
-        if (playerIsClose)
-        {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            rollForFood.onClick.AddListener(RandomizeImage);
-        }
-        
 
+    private void Start()
+    {
+        rollForFood.onClick.AddListener(RandomizeImage);
     }
+
 
     void RandomizeImage()
     {
@@ -63,6 +61,7 @@ public class Randomizer : MonoBehaviour
             imageToChange.sprite = rareLobster;
             yield return new WaitForSeconds(delayTime); //delays the certificate popping up after the lobster
             certificate.SetActive(true);
+            rollButton.SetActive(false);
         }
         // otherwise idk
         else
@@ -71,6 +70,5 @@ public class Randomizer : MonoBehaviour
         }
         yield return null;
     }
-
     
 }
