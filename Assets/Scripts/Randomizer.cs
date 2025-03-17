@@ -29,6 +29,10 @@ public class Randomizer : MonoBehaviour
 
     public int rareLobsterChance;
 
+    [Header("Sound")]
+    [SerializeField] AudioSource lobsterJumpscare;
+    public AudioClip boo;
+
 
     private void Start()
     {
@@ -61,9 +65,9 @@ public class Randomizer : MonoBehaviour
         if(rollForLobster < rareLobsterChance)
         {
             imageToChange.sprite = rareLobster;
-            yield return new WaitForSeconds(delayTime); //delays the certificate popping up after the lobster
-            certificate.SetActive(true);
             rollButton.SetActive(false);
+            yield return new WaitForSeconds(delayTime); //delays the certificate popping up after the lobster
+            certificate.SetActive(true);          
             closeButton.SetActive(true);
             imageHolder.SetActive(false);
         }
@@ -76,5 +80,6 @@ public class Randomizer : MonoBehaviour
 
         
     }
+
     
 }
