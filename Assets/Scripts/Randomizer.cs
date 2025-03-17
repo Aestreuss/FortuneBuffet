@@ -17,6 +17,8 @@ public class Randomizer : MonoBehaviour
 
     public GameObject certificate;
     public GameObject rollButton;
+    public GameObject closeButton;
+    public GameObject imageHolder;
 
     Buffet playerIsClose;
 
@@ -62,6 +64,8 @@ public class Randomizer : MonoBehaviour
             yield return new WaitForSeconds(delayTime); //delays the certificate popping up after the lobster
             certificate.SetActive(true);
             rollButton.SetActive(false);
+            closeButton.SetActive(true);
+            imageHolder.SetActive(false);
         }
         // otherwise idk
         else
@@ -69,6 +73,8 @@ public class Randomizer : MonoBehaviour
             imageToChange.sprite = sprites[randomIndex];
         }
         yield return null;
+
+        
     }
     
 }
