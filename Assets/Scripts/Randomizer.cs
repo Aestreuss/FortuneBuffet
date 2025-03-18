@@ -20,8 +20,6 @@ public class Randomizer : MonoBehaviour
     public GameObject closeButton;
     public GameObject imageHolder;
 
-    Buffet playerIsClose;
-
     public Button rollForFood;
 
     [Header("Delay and Chance")]

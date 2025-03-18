@@ -1163,7 +1163,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Walk towards the buffet and roll your food! for the chance to get the RARE
-    blue lobster (one per customer please)
+    blue lobster (one per customer please these aren't cheap)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6380,7 +6380,9 @@ MonoBehaviour:
   imageHolder: {fileID: 1857475970}
   rollForFood: {fileID: 381976552}
   delayTime: 1
-  rareLobsterChance: 20
+  rareLobsterChance: 15
+  lobsterJumpscare: {fileID: 0}
+  boo: {fileID: 0}
 --- !u!114 &2048272120
 MonoBehaviour:
   m_ObjectHideFlags: 0
